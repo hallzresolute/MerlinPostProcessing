@@ -362,6 +362,10 @@ function onOpen() {
   writeBlock(sOutput.format(255));
   writeBlock(sOutput.format(0) + "\n");
 
+  //Z Zeroing
+  writeComment("Z Zero");
+  writeBlock(zOutput.format(0));
+
   lastSubprogram = 0;
 
   // dump machine configuration
